@@ -1,0 +1,72 @@
+.modal-body {
+  padding: 32px;
+}
+
+.modal-body p {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.modal-body .button-camo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 32px;
+  top: 68px;
+  border-radius: 12px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #cfd8dc;
+  margin-top: 1rem;
+}
+
+.button-camo .button-camo-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.modal-body .first-child {
+  background: #f8f9fa;
+}
+
+.button-camo-left img {
+  height: 44px;
+  width: 44px;
+  object-fit: contain;
+}
+
+.button-camo-left p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.button-camo svg {
+  height: 20.000000000000018px;
+  width: 20.000000000000018px;
+  left: 496px;
+  top: 44px;
+  border-radius: 0px;
+  color: #969da6;
+}
+
+@media (max-width:568px){
+.modal-body p {
+  font-size: 15px;
+}
+
+.modal-body .button-camo {
+
+  padding: 8px 20px 8px 20px;
+  border: 1px solid #cfd8dc;
+  margin-top: 1rem;
+}
+}

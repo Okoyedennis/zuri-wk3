@@ -1,0 +1,60 @@
+.placeToStay {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.placeToStay .placeToStay__head-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 90px;
+  background-color: #fff;
+  gap: 48px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: var(
+    max-content,
+    calc(
+      (
+          100% - var(--contentscroller_gap, 16px) *
+            (var(--contentscroller_visible-items, unset) - 1)
+        ) / var(--contentscroller_visible-items, unset)
+    )
+  );
+  overflow: var(--contentscroller_overflow, auto hidden);
+  scroll-padding-inline: var(0 24px, 32px);
+  width: 100%;
+  margin-bottom: -4rem;
+}
+
+.placeToStay__head-wrapper p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #434343;
+}
+
+.placeToStay__head-wrapper .location {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 140px;
+  border: 1px solid #b4b4b4;
+  height: 48px;
+  border-radius: 8px;
+  padding: 0rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .placeToStay .placeToStay__head-wrapper {
+    gap: 5px;
+  }
+
+  .placeToStay__head-wrapper p {
+    width: 90px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,130 @@
+.navbars {
+  height: 80px;
+  max-width: 100%;
+  top: 0 !important;
+  position: sticky !important;
+  z-index: 100;
+
+  background-color: #fff;
+}
+
+.navbars .navbar__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.navbar__wrapper img {
+  height: 36.66666793823242px;
+  width: 233px;
+  object-fit: contain;
+  /* box-shadow: inset 4px 4px 44px rgba(96,96,96,0.15); */
+}
+
+.navbar__wrapper .ul {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  height: 23px;
+  list-style: none;
+}
+
+.navbar__wrapper .ul a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #434343;
+}
+
+.navbar__wrapper button {
+  height: 48px;
+  width: 170px;
+  left: 1070px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar__wrapper .menu-icon {
+  display: none;
+}
+
+.navbar__button_first {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbars {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+  .navbar__wrapper img {
+    height: 36.66666793823242px;
+    width: 180px;
+    object-fit: contain;
+  }
+
+  .navbar__wrapper .ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+
+  .navbar__wrapper .ul.active {
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 100;
+  }
+
+  .navbar__button_second {
+    display: none;
+  }
+
+  .navbar__button_first {
+    display: block;
+  }
+
+  .navbar__button_first button {
+    background: #8043d7 !important;
+  }
+
+  .navbar__wrapper .menu-icon {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .navbar__wrapper .ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: unset;
+    background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  }
+
+  .navbar__wrapper .ul a {
+    font-size: 15px;
+    color: #fff;
+  }
+}
